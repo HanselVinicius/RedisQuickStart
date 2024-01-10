@@ -3,18 +3,17 @@
 
 Este projeto visa demonstrar como integrar o Redis com o Spring Boot da forma mais simples possivel para caching utilizando as anotações @Cacheable, @CacheEvict e a resource file.
 
-## Dependências Maven
-Certifique-se de adicionar a seguinte dependência ao seu arquivo pom.xml para suporte ao Redis.
+## Configuração do Redis
+Com o Redis já instalado e em execução. Você pode configurar as propriedades de conexão no arquivo application.properties do Spring Boot.
+
 
 ```
     spring.redis.host=localhost
     spring.redis.port=6379
     spring.cache.type=redis
 ```
-
-## Configuração do Redis
-Com o Redis já instalado e em execução. Você pode configurar as propriedades de conexão no arquivo application.properties do Spring Boot.
-
+## Dependências Maven
+Certifique-se de adicionar a seguinte dependência ao seu arquivo pom.xml para suporte ao Redis.
 ```xml
 <dependencies>
     <dependency>
