@@ -9,10 +9,10 @@ import java.math.BigDecimal;
 
 public record ProductDto(
         @NotBlank
-        @Size(min = 10, max = 50)
+        @Size(min = 5, max = 50)
         String name,
         @NotBlank
-        @Size(min = 10, max = 200)
+        @Size(min = 5, max = 200)
         String description,
         @DecimalMin(value = "0.0", inclusive = false)
         BigDecimal price
