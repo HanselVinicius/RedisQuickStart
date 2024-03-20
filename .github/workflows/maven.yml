@@ -20,6 +20,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run:  mvn -B package -DskipTests -pl '!controller-module' --file pom.xml
+      run:  mvn -B package -DskipTests -pl '!controller' --file pom.xml
 
 
